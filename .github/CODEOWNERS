@@ -1,0 +1,36 @@
+# CODEOWNERS file for admin-database-373
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-security @Armor-test/unit-test @Armor-test/unit-devops
+
+# Directory ownership
+/deploy/ @Armor-test/squad-research @Armor-test/grp-ui @Armor-test/team-core
+/migrations/ @Armor-test/team-core @Armor-test/unit-cloud
+/examples/ @Armor-test/grp-search @Armor-test/grp-payments
+/pages/ @Armor-test/squad-ml @Armor-test/squad-search
+/src/ @Armor-test/dept-ui @Armor-test/grp-storage @Armor-test/grp-integration
+/core/ @Armor-test/dept-ui @Armor-test/squad-frontend @Armor-test/squad-apps
+/app/ @Armor-test/dept-logging @Armor-test/dept-test @Armor-test/dept-automation
+/test/ @Armor-test/grp-ui @Armor-test/dept-automation @Armor-test/team-research
+/spec/ @Armor-test/unit-governance @Armor-test/squad-payments @Armor-test/dept-data
+/views/ @Armor-test/squad-cloud @Armor-test/squad-qa
+/dist/ @Armor-test/dept-security @Armor-test/team-reporting
+
+# File type ownership
+*.gradle @Armor-test/dept-notifications @Armor-test/squad-performance
+*.tsx @Armor-test/dept-notifications @Armor-test/dept-billing
+*.c @Armor-test/grp-payments @Armor-test/squad-search @Armor-test/grp-ui
+*.rs @Armor-test/squad-product @Armor-test/squad-reporting @Armor-test/squad-frontend
+*.jsx @Armor-test/team-governance @Armor-test/squad-product
+*.toml @Armor-test/team-notifications @Armor-test/squad-ml
+*.xml @Armor-test/dept-reporting @Armor-test/dept-identity
+*.rb @Armor-test/dept-identity @Armor-test/grp-ui
+*.scss @Armor-test/team-frontend @Armor-test/grp-api
+*.css @Armor-test/squad-performance @Armor-test/grp-ui
+*.yaml @Armor-test/dept-release @Armor-test/squad-payments
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
